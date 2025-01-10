@@ -74,9 +74,13 @@ public class Main {
 
         MiniBank.setAccounts(ca, sa, ld);
 
+        System.out.println();
+        System.out.println("************************************");
         System.out.println("You Current Account and Saving Account created successfully with initial balance of 1000.0");
         System.out.println("Please remember your social security number and pin for login.");
         System.out.println("Login to access your account.");
+        System.out.println("************************************");
+        System.out.println();
 
 
     }
@@ -108,8 +112,12 @@ public class Main {
         double amount = sc.nextDouble();
         MiniBank.getCurrentAccounts().getFirst().withdraw(amount);
         MiniBank.getSavingAccounts().getFirst().deposit(amount);
+        System.out.println();
+        System.out.println("************************************");
         System.out.println("Amount transferred successfully");
         accountsInformation();
+        System.out.println();
+        System.out.println("************************************");
     }
 
 }

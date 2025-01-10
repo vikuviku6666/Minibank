@@ -33,6 +33,8 @@ public abstract class MiniBank
     }
     public static void AccountsInfo(CurrentAccount currentAccount, SavingAccount savingAccount)
     {
+        System.out.println();
+        System.out.println("************************************");
         System.out.println("Current Account Information");
         currentAccount.printAccountInfo();
         System.out.println();
@@ -40,5 +42,6 @@ public abstract class MiniBank
         System.out.println("===================================");
         System.out.println("Saving Account Information");
         savingAccount.printAccountInfo();
+        System.out.println();
     }
 }
