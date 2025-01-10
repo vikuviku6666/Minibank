@@ -35,6 +35,7 @@ public abstract class MiniBank
     {
         System.out.println("Current Account Information");
         currentAccount.printAccountInfo();
+        System.out.println();
         System.out.println("===================================");
         System.out.println("===================================");
         System.out.println("Saving Account Information");

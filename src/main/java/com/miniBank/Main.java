@@ -6,14 +6,13 @@ import java.util.UUID;
 
 public class Main {
 
-    static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
 
         startMenu();
     }
 
     static void startMenu(){
+        Scanner sc = new Scanner(System.in);
         boolean active = true;
         while (active) {
             System.out.println("Mini Bank Application");
@@ -35,9 +34,11 @@ public class Main {
         }
     }
     static void loginMenu(){
-
+        Scanner sc = new Scanner(System.in);
         boolean active = true;
         while (active) {
+            System.out.println();
+            System.out.println("Logged in Menu");
             System.out.println("1. Account Information");
             System.out.println("2. Transfer");
             System.out.println("3. Logout");
@@ -57,6 +58,7 @@ public class Main {
     }
 
     static void openBankAccount(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String name = sc.nextLine();
 
@@ -80,6 +82,7 @@ public class Main {
     }
 
     static void login(){
+        Scanner sc = new Scanner(System.in);
         //Scanner scan = new Scanner(System.in);
         System.out.println("Enter Social Security Number: ");
         String name = sc.nextLine();
@@ -100,6 +103,7 @@ public class Main {
     }
 
     static void transfer(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount to transfer: ");
         double amount = sc.nextDouble();
         MiniBank.getCurrentAccounts().getFirst().withdraw(amount);
